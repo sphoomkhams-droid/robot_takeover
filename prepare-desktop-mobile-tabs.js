@@ -67,7 +67,7 @@ const users = [
     await page.fill('#password', user.password);
     // ตั้งชื่อ tab ให้รู้ว่าเป็น user ไหน
     await page.evaluate((email) => {
-      document.title = `DESKTOP | ${email}`;
+      document.title = `DESKTOP | ${email}`; //sss
     }, user.email);
 
   }
